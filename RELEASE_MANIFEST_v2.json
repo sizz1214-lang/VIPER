@@ -1,0 +1,65 @@
+{
+  "schema": "viper-rsr-btr-separate-patches-release-v2",
+  "sealed_date": "2026-08-23",
+  "replacement": {
+    "removed_btr_asset": "VIPER_BTR_Korean_xdelta_v1.zip",
+    "replacement_btr_asset": "VIPER_BTR_Korean_xdelta_NotoRegular16_v2.zip",
+    "reason": "User requested the Noto Regular 16 font.bmp variant to replace the previously uploaded BTR package."
+  },
+  "packages": [
+    {
+      "id": "viper-rsr-windows-patcher-v1",
+      "release_state": "STATIC_AND_PATCHER_BEHAVIOR_PASS_KOREAN_GLYPH_VISUAL_PENDING",
+      "zip": {
+        "path": "VIPER_RSR_Korean_Patch_v1.zip",
+        "size": 92088,
+        "sha256": "499b431fd9f66b888dbb73172088abbeecaecca458f45a45a4c58854229d049e"
+      },
+      "primary_artifact": {
+        "path": "VIPER_RSR_Korean_Patch.exe",
+        "size": 131917,
+        "sha256": "c8a55506682ed28b9e04a8258194868a035f58505d0b4d8726317a851e955c51"
+      }
+    },
+    {
+      "id": "viper-btr-xdelta-noto-regular16-v2",
+      "release_state": "STATIC_AND_PACKAGE_PASS_RUNTIME_PENDING_RC",
+      "zip": {
+        "path": "VIPER_BTR_Korean_xdelta_NotoRegular16_v2.zip",
+        "size": 312396,
+        "sha256": "8aa5d01280c276a9bf011773845e48ff599c71f845b66c005f4f342bdfe1f397"
+      },
+      "standalone_assets": [
+        {
+          "path": "Viper_BTR_Korean_Final_v1.xdelta",
+          "size": 125204,
+          "sha256": "1385e9eb6624693f5e4cde98887e0481d20104091684817bb6e313b501cf6379"
+        },
+        {
+          "path": "font.bmp",
+          "size": 524350,
+          "sha256": "73c354b307fce0098c9f49738199fd286cacb9352277c55a39648e0f5e2cd585"
+        },
+        {
+          "path": "FONT_PROVENANCE_AND_LICENSE.txt",
+          "size": 4987,
+          "sha256": "2ea92b519a3f5f7301cbe80bef016fb96a207d7d3c3ef4b4a4e154ef9387f23c"
+        }
+      ],
+      "source_hdi": {
+        "size": 20786176,
+        "sha256": "dbc91f5d15eb7fb5400b6c82bc904223eb03f186280e8e7d94dede65cb755ef0",
+        "bytes_currently_present_in_workspace": false
+      },
+      "output_hdi": {
+        "size": 20786176,
+        "sha256": "6c9fde1b237bf9dcb003b85a379264e2a4a53b2815aeb2809d9c458b3de0e479"
+      },
+      "historical_exact_source_roundtrip": "PASS",
+      "font_static_and_rerender_qa": "PASS",
+      "package_zip_readback": "PASS",
+      "exact_noto_runtime_tuple": "PENDING",
+      "release_channel": "prerelease"
+    }
+  ]
+}
