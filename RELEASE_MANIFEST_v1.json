@@ -1,0 +1,50 @@
+{
+  "schema": "viper-rsr-btr-separate-patches-release-v1",
+  "sealed_date": "2026-08-23",
+  "packages": [
+    {
+      "id": "viper-rsr-windows-patcher-v1",
+      "release_state": "STATIC_AND_PATCHER_BEHAVIOR_PASS_KOREAN_GLYPH_VISUAL_PENDING",
+      "folder": "VIPER_RSR",
+      "zip": {
+        "path": "VIPER_RSR_Korean_Patch_v1.zip",
+        "size": 92088,
+        "sha256": "499b431fd9f66b888dbb73172088abbeecaecca458f45a45a4c58854229d049e"
+      },
+      "primary_artifact": {
+        "path": "VIPER_RSR/VIPER_RSR_Korean_Patch.exe",
+        "size": 131917,
+        "sha256": "c8a55506682ed28b9e04a8258194868a035f58505d0b4d8726317a851e955c51"
+      }
+    },
+    {
+      "id": "viper-btr-xdelta-v1",
+      "release_state": "PATCH_BUILD_PASS_RUNTIME_FINAL_TUPLE_PREVIOUSLY_CONFIRMED",
+      "folder": "VIPER_BTR",
+      "zip": {
+        "path": "VIPER_BTR_Korean_xdelta_v1.zip",
+        "size": 295417,
+        "sha256": "c0aa128ce525b08968bfe195ce7e844f10f23395fb8a3773a209ffecb34c8782"
+      },
+      "patches": [
+        {
+          "path": "VIPER_BTR/Viper_BTR_Korean_Final_v1.xdelta",
+          "size": 125204,
+          "sha256": "1385e9eb6624693f5e4cde98887e0481d20104091684817bb6e313b501cf6379"
+        },
+        {
+          "path": "VIPER_BTR/Viper_BTR_Korean_Font_v1.xdelta",
+          "size": 162558,
+          "sha256": "880bb85c1e2be89e3ca2485d627aa760440fe6f70607259fdb2b6e018206ae17"
+        }
+      ],
+      "source_hdi": {
+        "size": 20786176,
+        "sha256": "dbc91f5d15eb7fb5400b6c82bc904223eb03f186280e8e7d94dede65cb755ef0",
+        "bytes_currently_present_in_workspace": false
+      },
+      "historical_exact_source_roundtrip": "PASS",
+      "runtime_final_tuple": "PASS_COHERENT_KOREAN_DIALOGUE_VISIBLE"
+    }
+  ]
+}
